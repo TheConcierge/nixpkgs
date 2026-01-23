@@ -34,7 +34,7 @@ buildPythonPackage rec {
     mkdir -p $out/share/doc/${pname}
     mkdir -p $out/share/licenses/${pname}
 
-    mv "$out/${python.sitePackages}/LICENSE" $out/share/licenses
+    mv "$out/${python.sitePackages}/LICENSE" $out/share/${pname}/licenses
     mv "$out/${python.sitePackages}/README.md" $out/share/doc/${pname}/
     mv "$out/${python.sitePackages}/CHANGELOG.md" $out/share/doc/${pname}/
   '';
